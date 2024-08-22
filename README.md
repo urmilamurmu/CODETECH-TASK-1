@@ -8,9 +8,9 @@ Mentor: Muzammil Ahmed
 
 ##OVERVEIW OF THE PROJECT
 
-Project: TO -DO LIST WEB APPLICATION
+Project: TO - DO LIST WEB APPLICATION
 
-imp
+
 
 ##Objectivee The primary objective of the To-Do List Website project is to create a user-friendly, efficient, and responsive web application thatallows users to manage their tasks effectively. The application aims to help users organize theirdaily, weekly, and monthly tasks, set reminders, and track their progress, thereby enhancing productivity and time management.
 
