@@ -1,0 +1,35 @@
+/* This is the task 1 CSS code for TO-DO List */
+
+document.addEventListener("DOMContentLoaded", function() {
+    const inputBox = document.getElementById('input-box');
+    const listContainer = document.getElementById('list-container');
+    const addButton = document.getElementById('add-button');
+
+    function addTask() {
+        if (inputBox.value === '') {
+            alert('You should write something');
+        } else {
+            let li = document.createElement('li');
+            li.innerText = inputBox.value;
+
+            
+            let removeButton = document.createElement('span');
+            removeButton.innerText = ' \u00D7'; // Unicode for multiplication sign (×)
+            removeButton.className = 'remove-button';
+            removeButton.onclick = function() {
+                li.remove();
+            };
+
+            
+            li.addEventListener('click', function() {
+                li.classList.toggle('checked');
+            });
+
+            li.appendChild(removeButton);
+            listContainer.appendChild(li);
+        }
+        inputBox.value = '';
+    }
+
+    addButton.addEventListener('click', addTask);
+});
